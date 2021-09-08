@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+}
+
+input{
+    display: block;
+}
+
+.cartilla{
+    background-color: aqua;
+    width: 60%;
+    height: 100%px;
+    background: rgb(92, 156, 233); 
+    padding: 40px;
+    display: inline-block;
+    text-align: center;
+    color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
+}
+.form-contenedor{
+    background-color: rgb(3, 44, 44);
+    text-align: start;
+    padding: 10px;
+}
+label{
+    padding: 10px;
+}
+input{
+    display: inline;
+}
+div{
+    padding: 5px;
+}
+p{
+    padding: 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(231, 121, 18);
+    height: 100%;
+}
+.imagenes{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    padding:20px;
+
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 800px;
+}
+

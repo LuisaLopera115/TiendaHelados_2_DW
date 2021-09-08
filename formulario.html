@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 3 desarrollo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/EstiloCartilla.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cartilla">
+            <h1>
+                ELIJE COMO QUIERES TU HELADO
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi hic quod omnis voluptate
+                pariatur molestias, ducimus laudantium illo vel cupiditate ipsa esse aliquid enim praesentium provident
+                facere
+                iusto veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi hic quod omnis
+                voluptate
+                pariatur molestias, ducimus laudantium illo vel cupiditate ipsa esse aliquid enim praesentium provident
+                facere
+                iusto veritatis?
+            </p>
+            <div class="imagenes">
+                <figure>
+                    <img width="250px" src="img/juegos1.jpg" alt="img/logo.PNG">
+                </figure>
+                <figure>
+                    <img width="250px" src="img/juegos2.jpg" alt="img/logo.PNG">
+                </figure>
+            </div>
+            <div class="form-contenedor">
+                <form action="">
+                    <div>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="">Correo Electronico</label>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Cel</label>
+                        <input type="tel" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Direccion</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">date</label>
+                        <input type="date" name="" id="">
+                    </div>
+                    <button type="reset">Hacer el pedido</button>
+                    <button type="submit"></button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function despliega() {
+            console.log('entra a la funcion')
+            var enlace = document.getElementsByClassName('nav-enlace');/* toma las variables de clase nav enlace */
+            for (var i = 0; i < enlace.length; i++) {
+                enlace[i].classList.toggle('desaparace');
+            }
+        }
+    </script>
+</body>
+
+</html>

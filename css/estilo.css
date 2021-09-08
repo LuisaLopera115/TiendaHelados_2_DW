@@ -1,0 +1,483 @@
+:root{
+    /*aqui van los valores de los colores*/
+  --color1: #ff6058b9;
+  --color1_: #ff6058;
+  --color2: #fa981788;
+  --color2_: #FA9917;
+  --color3_: #FF3366;
+  --color4: #2AC940;
+  --color4_: #2ac93fa1;
+  --fondo: #f2f2f2;
+  --titulos: 33px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido: 45px;
+  --fuente-delgada: 300;
+  --fuente-media: 500;
+  --fuente-gruesa: 600;
+}
+*{
+    margin: 0%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: var(--fuente-delgada);
+    font-size: 24px;
+
+}  
+header{
+    width: 100%;
+    height: 600px;
+    background: url(../img/header.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+.div-menu{
+    background-color: #2AC940;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.div-logo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: darkslateblue;
+    padding: 0;
+}
+.div-navegador{
+    width: 100%;
+    background-color: darkturquoise;
+}
+nav{
+    display: flex;
+    margin-right: 30px;
+    margin-top: 0%;
+    justify-content: flex-end;
+    background-color: #FF3366;
+}
+.compra{
+    font-weight: var(--fuente-media);
+    font-size: 26px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    color: aliceblue;
+    border:none;
+    padding: 10px;
+}
+.nav-menu{
+    background-color: rgb(155, 247, 168);
+    color: black;  
+    display: none;
+}
+.nav-enlace{
+    padding: 20px;
+    margin-top: 0%;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(102, 84, 6);
+   /* display: inline-block;*/
+}
+.compra-content{
+    background-color: #2AC940;
+    padding: 10px;
+}
+.nav-enlace:hover{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.main-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    
+}
+.columna{
+    background: var(--color1);
+    color: rgb(255, 255, 255);
+    width: 50%; 
+    margin: 0%;
+    display: inline-block;
+    justify-content: center;
+}
+#info{
+    width: 100%;
+    display: flex;
+}
+p{
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+}
+#fresa{
+    width: 20%; 
+    height: 100%;
+}
+#cafe{
+    width: 20%; 
+    height: 100%;
+}
+#chicle{
+    width: 20%; 
+    height: 100%;
+}
+#vainilla{
+    width: 20%; 
+    height: 100%;
+}
+.flecha{width: 10%; justify-items: center;}
+.section-sabores{
+    width: 100%;
+    height: 800px;
+    display: inline-block;
+    justify-content: center;
+}
+.column-sabores-container{
+    background-color: var(--color1);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column-sabores{
+    display: flex;
+    justify-content: center;
+}
+.section-titulo{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: var(--fuente-gruesa);
+    font-size: 40px;
+}
+#title-rosa{
+    color: var(--color1);
+}
+#title-naranja{
+    color: var(--color2_);
+}
+#title-verde{
+    color: var(--color4);
+}
+.section-1{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2);
+}
+#imagen-1{
+    width: 50%;
+    height:100%;
+    background: url(../img/cucurucho.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+#imagen-2{
+    width: 50%;
+    height:100%;
+    background: url(../img/malteadas.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+#imagen-3{
+    width: 50%;
+    height:100%;
+    background: url(../img/Platos.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.fila-1{
+    width: 50%;
+    height: 70%;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#info-1{
+    width: 100%;
+    height: 50%;
+    background: url(../img/cucuruchotext.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#info-2{
+    width: 100%;
+    height: 50%;
+    background: url(../img/MalteadasInfo.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#info-3{
+    width: 100%;
+    height: 50%;
+    background: url(../img/platosInfo.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#subinfo{
+    width: 70%;
+    height: 30%;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+.boton_{
+    padding: 5px 40px;
+    background-color: var(--color3_);
+    color: #ffffff;
+    font-weight: var(--fuente-gruesa);
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+}
+#bt-conocenos{
+    background-color: var(--color4);
+}
+.separador{
+    height: 50px;
+}
+.section-nosotros{
+    height: 500px;
+    width: 100%;
+}
+.section-2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fila-2{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#imagen-4{
+    width: 50%;
+    height:100%;
+    background: url(../img/chef.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#info-4{
+    width: 100%;
+    height: 70%;
+    background: url(../img/chefInfo.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#subinfo-losdemas{
+    width: 90%;
+    text-align: center;
+}
+.masInfo{
+    background-color: chartreuse;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    display:inline-block;
+}
+aside{
+    background-color: blueviolet;
+    height: 50px;
+}
+footer{
+    background-color: var(--color4_ ) ;
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+    color: white;
+}
+@media(max-width:320px){
+    .section-sabores{
+        height: 400px;
+    }   
+    .section-1{
+        display:inline-block;
+        justify-content: center;
+        height: 400px;
+    }
+}
+@media(max-width:500px){
+    .section-titulo{
+        height: 50px;
+    }
+    .info-login{
+        display: none;
+    }
+    .flecha{
+        display: none;
+    }
+    
+}
+@media(max-width:700px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-menu{
+        background-color: rgb(155, 247, 168);
+        color: black;
+        display:inline-block;
+    }
+    .desaparace{
+        display: none;
+    } 
+    .div-menu{
+        background-color: black;
+        padding: 5px;
+        display: block;
+        justify-content: center;
+    }
+    .div-logo{
+        background-color: rgb(156, 118, 192);
+        width: 100%;
+    }
+    .div-navegador{
+        background-color: rgb(138, 158, 98);
+        width: 100%;
+    }
+    .div-login{
+        background-color: rgb(170, 54, 155);
+        width: 100%;
+    }  
+    .section-1{
+        display:inline-block;
+        justify-content: center;
+        height: 900px;
+    }
+    .fila-1{
+        width: 100%;
+        height: 50%;
+    }
+    #info-1{
+        background-size: 90%;
+        height: 80%;
+    }
+    #info-2{
+        background-size: 90%;
+        height: 80%;
+    }
+    #info-3{
+        background-size: 90%;
+        height: 80%;
+    }
+    #subinfo{
+        width: 100%;
+        height: 10%;
+    }
+    #imagen-1{
+        width: 100%;
+        height:50%;
+        background-size: 80%;
+    }
+    #imagen-2{
+        width: 100%;
+        height:50%;
+        background-size: 80%;
+    }
+    #imagen-3{
+        width: 100%;
+        height:50%;
+        background-size: 80%;
+    }
+}
+@media(max-width:900px){
+    #chicle{
+        width: 20%; 
+        height: 100%;
+        display: none;
+    }
+}
+@media(max-width:1100px){
+    
+    nav{
+        flex-direction: column;
+    }
+    .nav-menu{
+        background-color: rgb(155, 247, 168);
+        color: black;
+        display:inline-block;
+    }
+    .desaparace{
+        display: none;
+    } 
+    .div-menu{
+        background-color: black;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .div-logo{
+        background-color: rgb(156, 118, 192);
+        width: 50%;
+    }
+    .div-navegador{
+        background-color: rgb(138, 158, 98);
+        width: 50%;
+        padding: 5px;
+    }
+    .div-login{
+        background-color: rgb(170, 54, 155);
+        width: 100%;
+    } 
+    #cafe{
+        width: 20%; 
+        height: 100%;
+        display: none;
+    }
+    .column-sabores-container{
+        justify-content: space-around;
+    }
+    #imagen-1{
+        background-size: 90%;
+    }
+    #imagen-2{
+        background-size: 90%;
+    }
+}
+@media(max-width:1350px){
+    /*En esta oarte de codigo se acomodara la barra deslizadora*/
+    #fresa{
+        width: 20%; 
+        height: 100%;
+        display: none;
+    }
+    .column-sabores-container{
+        justify-content: space-around;
+    }
+    
+    #imagen-1{
+        background-size: 85%;
+    }
+    #imagen-2{
+        background-size: 90%;
+    }
+}
+
