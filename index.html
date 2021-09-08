@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 3 desarrollo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="div-menu">
+
+            <div class="div-logo">
+                <figure>
+                    <img width="150px" src="img/header.png" alt="img/logo.PNG">
+                </figure>
+            </div>
+
+
+            <div class="div-navegador">
+                <nav>
+                    <!-- En esta zona de la pagina va  la navegacion -->
+                    <button class="nav-menu" onclick="despliega()">MENU</button>
+                    <a href="#" class="nav-enlace desaparace"> Inicio</a>
+                    <a href="#" class="nav-enlace desaparace">Sabores</a>
+                    <a href="#" class="nav-enlace desaparace">Estilos</a>
+                    <a href="#" class="nav-enlace desaparace">Nosotros</a>
+                    <a href="#" class="nav-enlace desaparace">Contactanos</a>
+                    <div class="compra-content nav-enlace desaparace"><button class="compra"
+                            onclick="despliega()">Compra Ahora</button></div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="section-sabores">
+            <div id="title-rosa" class="section-titulo">SABORES</div>
+            <div id="info" class="columna">
+                <p class="info-sabores">
+                    Mira las opciones de sabores disponibles, elige tu favorito y al estilo que tu quieras
+                </p>
+            </div>
+
+            <section class="column-sabores-container">
+
+                <div id="" class="column-sabores flecha">
+                    <figure>
+                        <img width="70px" src="img/Flecha1.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+
+                <div id="fresa" class="column-sabores">
+                    <figure>
+                        <img width="300px" src="img/Fresa.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+
+                <div id="cafe" class="column-sabores">
+                    <figure>
+                        <img width="300px" src="img/cafe.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+
+                <div id="vainilla" class="column-sabores">
+                    <figure>
+                        <img width="300px" src="img/Fresa.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+                <div id="chicle" class="column-sabores">
+                    <figure>
+                        <img width="300px" src="img/cafe.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+                <div id="" class="column-sabores flecha">
+                    <figure>
+                        <img width="70px" src="img/Flecha2.png" alt="img/logo.PNG">
+                    </figure>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="section-estilos">
+
+            <div id="title-naranja" class="section-titulo">ESTILOS</div>
+
+            <section class="section-1">
+                <div id="imagen-1" class="imagen_"></div>
+                <div class="fila-1">
+                    <div id="info-1" class="info_"></div>
+                    <div id="subinfo" clase="subinfo"><button class="boton_">PIDE YA</button></div>
+                </div>
+            </section>
+            <div class="separador"></div>
+
+            <section class="section-1">
+                <div class="fila-1">
+                    <div id="info-2" class="info_"></div>
+                    <div id="subinfo" clase="subinfo"><button class="boton_">PIDE YA</button></div>
+                </div>
+                <div id="imagen-2" class="imagen_"></div>
+            </section>
+
+            <div class="separador"></div>
+            <section class="section-1">
+                <div id="imagen-3" class="imagen_"></div>
+                <div class="fila-1">
+                    <div id="info-3" class="info_"></div>
+                    <div id="subinfo" clase="subinfo"><button class="boton_">PIDE YA</button></div>
+                </div>
+            </section>
+        </section>
+        <div id="title-verde" class="section-titulo">NOSOTROS</div>
+        <section class="section-nosotros">
+
+            <section class="section-2">
+
+                <div class="fila-2">
+                    <div id="info-4" class="info_"></div>
+                    <div id="subinfo-losdemas" clase="subinfo"><button id="bt-conocenos" class="boton_">CONOCE A LOS
+                            DEMÁS</button>
+                    </div>
+                </div>
+                <div id="imagen-4" class="imagen_"></div>
+            </section>
+        </section>
+
+        <div id="title-verde" class="section-titulo">CONTACTO</div>
+
+        <footer>En esta parte del footer se espera poner la bicacion del local con google</footer>
+
+        <script>
+            function despliega() {
+                console.log('entra a la funcion')
+                var enlace = document.getElementsByClassName('nav-enlace');/* toma las variables de clase nav enlace */
+                for (var i = 0; i < enlace.length; i++) {
+                    enlace[i].classList.toggle('desaparace');
+                }
+            }
+        </script>
+</body>
+
+</html>
