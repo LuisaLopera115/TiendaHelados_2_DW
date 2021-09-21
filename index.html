@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clase 3 desarrollo web</title>
+    <script src="https://kit.fontawesome.com/945caf51af.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
@@ -16,6 +17,8 @@
 </head>
 
 <body>
+    <!-- este es el menu deslizante -->
+
     <header>
         <div class="div-menu">
 
@@ -29,7 +32,7 @@
             <div class="div-navegador">
                 <nav>
                     <!-- En esta zona de la pagina va  la navegacion -->
-                    <button class="nav-menu" onclick="despliega()">MENU</button>
+                    <button class="nav-menu" onclick="Desliza()"><i class="fas fa-bars"></i></button>
                     <a href="#" class="nav-enlace desaparace"> Inicio</a>
                     <a href="#" class="nav-enlace desaparace">Sabores</a>
                     <a href="#" class="nav-enlace desaparace">Estilos</a>
@@ -37,10 +40,19 @@
                     <a href="#" class="nav-enlace desaparace">Contactanos</a>
                     <div class="compra-content nav-enlace desaparace"><button class="compra"
                             onclick="despliega()">Compra Ahora</button></div>
-
                 </nav>
             </div>
         </div>
+        <div id="menu-container">
+            <div id="slide-bar" class="active">
+                <li href="#" class="nav-slide "> Inicio</li>
+                <li href="#" class="nav-slide ">Sabores</li>
+                <li href="#" class="nav-slide ">Estilos</li>
+                <li href="#" class="nav-slide ">Nosotros</li>
+                <li href="#" class="nav-slide ">Contactanos</li>
+            </div>
+        </div>
+
     </header>
 
     <main class="main-container">
@@ -149,6 +161,11 @@
                 for (var i = 0; i < enlace.length; i++) {
                     enlace[i].classList.toggle('desaparace');
                 }
+            }
+
+            function Desliza() {
+                console.log('menu')
+                document.getElementById('slide-bar').classList.toggle('active')
             }
         </script>
 </body>

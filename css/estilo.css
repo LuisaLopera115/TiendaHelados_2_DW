@@ -31,8 +31,30 @@ header{
     background-attachment: contain;
     background-size: cover;
 }
+#menu-container{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+#slide-bar{
+    height: 100%;
+    width: 50%;
+}
+.active{
+    display: none;
+}
+.nav-slide{
+    background-color: rgba(26, 26, 26, 0.753);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 10px ;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.548);
+}
 .div-menu{
-    background-color: #2AC940;
+    background-color: rgba(26, 26, 26, 0.753);
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -41,19 +63,17 @@ header{
     width: 40%;
     display: flex;
     justify-content: center;
-    background-color: darkslateblue;
     padding: 0;
 }
 .div-navegador{
     width: 100%;
-    background-color: darkturquoise;
 }
 nav{
     display: flex;
     margin-right: 30px;
     margin-top: 0%;
+    height: 100%;
     justify-content: flex-end;
-    background-color: #FF3366;
 }
 .compra{
     font-weight: var(--fuente-media);
@@ -65,9 +85,15 @@ nav{
     padding: 10px;
 }
 .nav-menu{
-    background-color: rgb(155, 247, 168);
-    color: black;  
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;  
     display: none;
+    text-align: end;
 }
 .nav-enlace{
     padding: 20px;
@@ -75,11 +101,9 @@ nav{
     color: aliceblue;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(102, 84, 6);
    /* display: inline-block;*/
 }
 .compra-content{
-    background-color: #2AC940;
     padding: 10px;
 }
 .nav-enlace:hover{
@@ -342,29 +366,24 @@ footer{
         flex-direction: column;
     }
     .nav-menu{
-        background-color: rgb(155, 247, 168);
-        color: black;
         display:inline-block;
+        text-align: center;
     }
     .desaparace{
         display: none;
     } 
     .div-menu{
-        background-color: black;
         padding: 5px;
         display: block;
         justify-content: center;
     }
     .div-logo{
-        background-color: rgb(156, 118, 192);
         width: 100%;
     }
     .div-navegador{
-        background-color: rgb(138, 158, 98);
         width: 100%;
     }
     .div-login{
-        background-color: rgb(170, 54, 155);
         width: 100%;
     }  
     .section-1{
@@ -416,35 +435,34 @@ footer{
     }
 }
 @media(max-width:1100px){
-    
     nav{
         flex-direction: column;
+        width: 50%;
+        justify-content: flex-end;
     }
     .nav-menu{
-        background-color: rgb(155, 247, 168);
-        color: black;
         display:inline-block;
+    }
+    .fas{
+        font-size: 50px;
     }
     .desaparace{
         display: none;
     } 
     .div-menu{
-        background-color: black;
-        padding: 5px;
         display: flex;
         justify-content: center;
     }
     .div-logo{
-        background-color: rgb(156, 118, 192);
         width: 50%;
     }
     .div-navegador{
-        background-color: rgb(138, 158, 98);
         width: 50%;
         padding: 5px;
+        display: flex;
+        justify-content: flex-end;
     }
     .div-login{
-        background-color: rgb(170, 54, 155);
         width: 100%;
     } 
     #cafe{
